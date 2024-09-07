@@ -90,3 +90,39 @@ Algorithms: Test various regression algorithms (Linear Regression, Support Vecto
 
 ### Conclusion:
 The analysis provided a comprehensive overview of the california_housing dataset, uncovering valuable insights about housing characteristics and distributions. Automated tools facilitated an efficient exploratory data analysis. Among the tested regression algorithms, Support Vector Regression showed the best performance due to its capability to manage non-linear relationships, making it the preferred model for predicting housing values.
+
+## Notebook 3: Analysis and Modeling of Diabetes Dataset
+
+### Use Case:
+The use case for this notebook is to analyze and model a dataset provided by sklearn related to diabetes. The dataset contains physical and biochemical characteristics of diabetes patients and aims to predict disease progression based on these characteristics.
+
+### Objective:
+The objective is to perform a comprehensive analysis of the diabetes dataset, including exploratory data analysis (EDA), visualization, and model training. The end goal is to build and evaluate prediction models to estimate disease progression.
+
+### Steps:
+
+#### Ingest Data:
+Download the diabetes dataset from sklearn and load it into a Pandas DataFrame.
+Initialize the data analysis module with the DataFrame to facilitate further exploration.
+Review the dataset description, including its dimensions, attributes, and the target variable.
+
+#### Exploratory Data Analysis:
+Examine the dataset’s shape, size, and structure to understand its basic properties.
+Describe the variables and their types, including statistical summaries such as mean, standard deviation, and percentiles.
+Check for missing values and outliers, and visualize the distribution of data using histograms and boxplots.
+Analyze unique values in each column and their distributions.
+Assess the correlation matrix to identify relationships between variables.
+Create scatter plots to visualize relationships between pairs of variables, focusing on those with high correlation.
+Automated Exploratory Data Analysis:
+Use Sweetviz to generate automatic statistical summaries and visualizations of the dataset.
+Use Autoviz to create various plots, including scatter plots, histograms, box plots, and correlation matrices, for a comprehensive graphical analysis.
+
+#### Model Training and Validation:
+Prepare the data by splitting it into predictors and the target variable.
+Implement cross-validation using KFold with 5 splits to assess model performance.
+Standardize the data using StandardScaler.
+Train and evaluate different regression models, including Linear Regression, Ridge Regression, and Random Forest Regressor.
+Compare model performance based on the R² score to determine which algorithm best predicts disease progression.
+
+### Conclusion:
+The analysis reveals that the Linear Regression model outperforms others in predicting diabetes progression, likely due to the linear relationships inherent in the biological parameters. Ridge Regression also performs well, highlighting its effectiveness in capturing linear relationships with regularization. Random Forest Regressor, while useful in other contexts, shows comparatively lower performance for this dataset. The insights gained from the exploratory data analysis and model evaluation help in understanding the relationships between various health metrics and their impact on disease progression.
